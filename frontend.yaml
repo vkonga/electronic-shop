@@ -4,8 +4,9 @@
   tasks:
     - name: disable nginx 
       ansible.builtin.command: dnf module disable nginx -y
+
     - name: enable nginx 1.24 version
-      andible.builtin.command: dnf module enable nginx:1.24 -y
+      ansible.builtin.command: dnf module enable nginx:1.24 -y
     - name: install nginx
       ansible.builtin.dnf:
         name: nginx
