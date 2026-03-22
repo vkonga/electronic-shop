@@ -49,5 +49,5 @@
         name: mongodb-mongosh
         state: present
     - name: load products 
-      ansible.builtin.shell: mongosh --host MONGODB-SERVER-IPADDRESS </app/db/master-data.js
+      ansible.builtin.shell: mongosh --host mongodb.bankstatement2xl.com </app/db/master-data.js
       
